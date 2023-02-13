@@ -1,0 +1,9 @@
+Import('env')
+
+env.Append(CPPPATH='#/test')
+
+testfiles_power = ["powertest.cpp"]
+env.Program('test_powerdiagram',testfiles_power)
+
+testfiles_sasa = ["sasatest.cpp"]
+env.Program('test_sasa',testfiles_sasa)
